@@ -22,7 +22,9 @@ body {
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  background-image: url("/image/bg.jpeg");
+  background: linear-gradient(rgba(0, 0, 0, 0.485), rgba(0, 0, 0, 0.551)),
+    url("/image/bg.jpeg");
+  background-blend-mode: darken;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -31,6 +33,7 @@ body {
 .hidden_box {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
 }
 
@@ -40,6 +43,15 @@ body {
   height: 50px;
   border: 2px solid rgb(255, 106, 0);
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 106, 0);
+}
+
+.left_btn i,
+.right_btn i {
+  font-size: 20px;
 }
 
 .center_text {
@@ -63,11 +75,12 @@ body {
 .box {
   display: flex;
   flex-direction: column;
-  place-items: center;
+  place-items: center center;
   gap: 10px;
   border: 2px solid rgb(255, 106, 0);
   border-radius: 10px;
   padding: 20px;
+  max-width: 900px;
 }
 
 .img_div {
@@ -89,6 +102,7 @@ body {
 .info {
   text-align: center;
   color: white;
+  height: 100px;
 }
 
 .icon_stars i {
